@@ -4,7 +4,7 @@ import { client, urlFor } from "@/lib/sanity";
 import Image from "next/image";
 import Link from "next/link";
 
-export const revalidate = 10 // revalidate every 10 seconds
+export const revalidate = 5 // revalidate every 5 seconds
 
 async function getData() {
   const query = `
