@@ -32,7 +32,7 @@ export default async function Home() {
           <Card className="flex flex-col h-full hover:bg-opacity-80 hover:shadow-xl hover:-translate-y-5 transition-all duration-300 ease-in-out">
             <Image
               src={urlFor(blog.titleImage).url()}
-              alt={blog.title}
+              alt={'/placeholder-image.jpg'}
               className="rounded-t-lg h-[200px] object-cover"
               width={500}
               height={200}
