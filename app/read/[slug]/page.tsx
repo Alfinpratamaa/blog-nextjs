@@ -39,7 +39,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
                     {data.title}
                 </span>
             </h1>
-            <Image priority src={urlFor(data.titleImage).url()} alt={'/placeholder-image.jpg'} width={800} height={800} className="mt-5 rounded-lg h-[200px] border " />
+            <Image priority src={urlFor(data.titleImage).url() || '/placeholder-image.jpg'} alt={data.title} width={800} height={800} className="mt-5 rounded-lg h-[200px] border " />
             <div className="mt-5 flex justify-between text-sm text-gray-600">
                 <p>{data.author}</p>
                 <p>{data.dateReleased}</p>

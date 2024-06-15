@@ -31,8 +31,8 @@ export default async function Home() {
         <Link href={`/read/${blog.currentSlug}`} key={index}>
           <Card className="flex flex-col h-full hover:bg-opacity-80 hover:shadow-xl hover:-translate-y-5 transition-all duration-300 ease-in-out">
             <Image
-              src={urlFor(blog.titleImage).url()}
-              alt={'/placeholder-image.jpg'}
+              src={urlFor(blog.titleImage).url() || '/placeholder-image.jpg'}
+              alt={blog.title}
               className="rounded-t-lg h-[200px] object-cover"
               width={500}
               height={200}
