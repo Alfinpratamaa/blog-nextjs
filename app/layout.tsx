@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
         <title>{metadata.title?.toString()}</title>
         <meta name="description" content={metadata.description?.toString()} />
-        <link rel="icon" href='/blogss.jpg' />
+        <link rel="icon" href='/favicon.ico' />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </head>
       <body className={inter.className}>
